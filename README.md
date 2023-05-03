@@ -1,1 +1,1 @@
-# Data-Science-Projects
+Проекты Data Science. Классическое Машинное обучение
