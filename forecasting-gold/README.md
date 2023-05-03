@@ -1,30 +1,27 @@
 
-# Прогнозирование временных рядов
+# Предсказание восставновления золота из руды
 
-**Описание задачи:** Компания собрала исторические данные о заказах такси в аэропортах. Чтобы привлекать больше водителей в период пиковой нагрузки, нужно спрогнозировать количество заказов такси на следующий час. Необходимо добиться метрики RMSE < 48
+**Описание задачи:** Восстановление золота из руды. Необходимо подготовить прототип модели машинного обучения для компании. Компания разрабатывает решения для эффективной работы промышленных предприятий. Модель должна предсказать коэффициент восстановления золота из золотосодержащей руды. Нам предоставлены данные с параметрами добычи и очистки. Модель поможет оптимизировать производство, чтобы не запускать предприятие с убыточными характеристиками.
 
 **Используемые библиотеки:** 
 1. Pandas
-2. Statsmodels
+2. Scipy
 3. tqdm
 4. Seaborn
 5. Matplotlib
 6. scikit-learn
-7. CatBoost
+7. Imblearn
 8. time
-9. LightGBM
 
 **Используемые алгоритмы и методы:**
-* Декомпозиция веременных рядов: seasonal_decompose
-* Машинное обучение. Нюансы моделей с учетом временного ряда
-* Препроцецессинг: MinMaxScaler, StandardScaler, OrdinalEncoder
-* Кросс-валидация c учетом временного ряда: TimeSeriesSplit, GridSearchCV, RandomizedSearchCV
-* Градиентный бустинг: CatBoostRegressor
-* RandomForestRegressor
-* DummyRegressor
-* SVR
-* DecisionTreeRegressor
-* LinearRegression, Ridge, Lasso
-* Разработка Pipeline: Pipeline, ColumnTransformer
 * EDA
 * Визуализация данных
+* Препроцецессинг: StandardScaler, MinMaxScale
+* LinearRegression
+* DummyRegressor
+* DecisionTreeRegressor
+* SVR
+* RandomForestRegressor
+* Разработка Pipeline: Pipeline, ColumnTransformer, FunctionTransformer, BaseEstimator, * TransformerMixin
+* Создание собственной метрики — make_scorer
+* Кросс-валидация: RandomizedSearchCV
