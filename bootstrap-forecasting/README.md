@@ -1,30 +1,26 @@
 # Прогнозирование временных рядов
 
-**Описание задачи:** Компания собрала исторические данные о заказах такси в аэропортах. Чтобы привлекать больше водителей в период пиковой нагрузки, нужно спрогнозировать количество заказов такси на следующий час. Необходимо добиться метрики RMSE < 48
+**Описание задачи:** Нам предоставлены пробы нефти в трёх регионах: в каждом 10 000 месторождений, где измерили качество нефти и объём её запасов. Необходимо построить модель машинного обучения, которая поможет определить регион, где добыча принесёт наибольшую прибыль, а также проанализировать возможную прибыль и риски техникой Bootstrap.
 
 **Используемые библиотеки:** 
 1. Pandas
-2. Statsmodels
+2. SciPy
 3. tqdm
 4. Seaborn
 5. Matplotlib
 6. scikit-learn
-7. CatBoost
-8. time
-9. LightGBM
+
 
 **Используемые алгоритмы и методы:**
-* Декомпозиция веременных рядов: seasonal_decompose
-* Машинное обучение. Нюансы моделей с учетом временного ряда
-* Препроцецессинг: MinMaxScaler, StandardScaler, OrdinalEncoder
-* Кросс-валидация c учетом временного ряда: TimeSeriesSplit, GridSearchCV, RandomizedSearchCV
-* Градиентный бустинг: CatBoostRegressor
-* RandomForestRegressor
-* DummyRegressor
-* SVR
-* DecisionTreeRegressor
-* LinearRegression, Ridge, Lasso
-* Разработка Pipeline: Pipeline, ColumnTransformer
+* Машинное обучение 
+* Расчет бизнес-метрик
 * EDA
 * Визуализация данных
+* Bootstrap
+* Статистика (статистические тесты) - shapiro, t, ttest_ind
+* Доверительные интервалы
+* Препроцецессинг: StandardScaler
+* LinearRegression
+* DummyRegressor
+* Разработка Pipeline: Pipeline, ColumnTransformer
 
