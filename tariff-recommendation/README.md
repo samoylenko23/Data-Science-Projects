@@ -1,30 +1,29 @@
-# Прогнозирование временных рядов
+# Рекомендация тарифов
 
-**Описание задачи:** Компания собрала исторические данные о заказах такси в аэропортах. Чтобы привлекать больше водителей в период пиковой нагрузки, нужно спрогнозировать количество заказов такси на следующий час. Необходимо добиться метрики RMSE < 48
+**Описание задачи:** Оператор мобильной связи  выяснил: многие клиенты пользуются архивными тарифами. Они хотят построить систему, способную проанализировать поведение клиентов и предложить пользователям новый тариф: «Смарт» или «Ультра». Нужно построить модель для задачи классификации, которая выберет подходящий тариф. Необходимо получить accuracy > 0.75.
 
 **Используемые библиотеки:** 
 1. Pandas
-2. Statsmodels
-3. tqdm
+2. Numpy
+3. phik
 4. Seaborn
 5. Matplotlib
 6. scikit-learn
 7. CatBoost
-8. time
-9. LightGBM
+8. imblearn
+9. SHAP
 
 **Используемые алгоритмы и методы:**
-* Декомпозиция веременных рядов: seasonal_decompose
-* Машинное обучение. Нюансы моделей с учетом временного ряда
-* Препроцецессинг: MinMaxScaler, StandardScaler, OrdinalEncoder
-* Кросс-валидация c учетом временного ряда: TimeSeriesSplit, GridSearchCV, RandomizedSearchCV
-* Градиентный бустинг: CatBoostRegressor
-* RandomForestRegressor
-* DummyRegressor
-* SVR
-* DecisionTreeRegressor
-* LinearRegression, Ridge, Lasso
-* Разработка Pipeline: Pipeline, ColumnTransformer
 * EDA
-* Визуализация данных
+* Shap – интерпретация результатов моделей
+* Борьба с дисбалансмо классов - imblearn : under_sampling и over_sampling
+* Визуализация
+* Предобработка данных: MinMaxScaler
+* Применение Pipeline: Pipeline
+* Градиентный бустинг: catboost
+* DecisionTreeClassifier
+* RandomForestClassifier
+* KneighborsClassifier
+* LogisticRegression
+* Кросс-валидация и подбор параметров: GridSearchCV, StratifiedKFold, cross_val_score
 
