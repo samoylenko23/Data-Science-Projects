@@ -24,7 +24,6 @@
 * SVM
 * Baseline: DummyClassifier
 * Pipeline, избежание утечки данных
-* SVC
 * Подбор параметров: GridSearchCV + StratifiedKFold, RandomizedSearchCV
 * Интерпретация результатов: shap
 * Оценка важности признаков
